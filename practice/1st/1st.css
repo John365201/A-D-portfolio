@@ -1,0 +1,489 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    font-weight: 600;
+}
+
+.menu a {
+    font-size: 1em;
+    width: 45px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    padding: 6px 15px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.menu a:hover,
+a.active {
+    color: #333;
+    background: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://media.istockphoto.com/id/1835202509/vector/sunrise-or-sunset-with-starry-sky.jpg?s=2048x2048&w=is&k=20&c=EDv9S8GXzpKbAXdzWQp3hZM75ziAPW-G8O7cdIhoH2U=') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#heading {
+    position: absolute;
+    top: 20%;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 2px 4px 5px #232121;
+}
+
+.parallax img {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax img#moon {
+    width: 210px;
+    top: 44%;
+    right: 20%;
+}
+
+.parallax img#mountain {
+    position: fixed;
+    bottom: -200px;
+    height: 1000px;
+}
+
+.parallax img#grass {
+    bottom: -40%;
+}
+
+section {
+    position: relative;
+    background-color: #020912;
+    padding: 30px 100px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 300
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 50px;
+    }
+
+    #heading {
+        font-size: 3em;
+    }
+
+    .parallax img#moon {
+        width: 180px;
+    }
+
+    .parallax img#mountain {
+        bottom: 30%;
+    }
+
+    .parallax img#grass {
+        bottom: -10%;
+    }
+
+    section {
+        margin-top: -60px;
+        padding: 30px 50px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 468px) {
+    header {
+        padding: 30px 50px;
+    }
+
+    #logo {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #heading {
+        font-size: 3em;
+    }
+
+    .parallax img#moon {
+        width: 180px;
+        top: 65%;
+        right: 10%;
+    }
+
+    .parallax img#mountain {
+        width: 100%;
+        bottom: 30%;
+    }
+
+    .parallax img#grass {
+        bottom: -5%;
+        width: 130%;
+    }
+
+    section {
+        margin-top: -60px;
+        padding: 30px 50px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap');
+
+/* Resetting default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up grid layout for the body */
+
+/* Container for menu items */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    height: 100px;
+}
+
+/* Styling individual menu items */
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    transition: 0.5s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+/* Hover effect for menu items */
+.box:hover {
+    transform: scale(1.12);
+    font-size: 1.7em;
+    cursor: pointer;
+}
+
+/* Styling individual menu items based on their position */
+.box:nth-child(1) {
+    background: #6eff3e;
+    color: #6eff3e;
+}
+
+.box:nth-child(2) {
+    background: #ff3a3a;
+    color: #ff3a3a;
+}
+
+.box:nth-child(3) {
+    background: #3e88ff;
+    color: #3e88ff;
+}
+
+.box:nth-child(4) {
+    background: #d0fc3f;
+    color: #d0fc3f;
+}
+
+.box:nth-child(1):hover {
+    background: #6eff3e;
+    color: #6eff3e;
+    box-shadow: 0 0 80px #6eff3e;
+}
+
+.box:nth-child(2):hover {
+    background: #ff3a3a;
+    color: #ff3a3a;
+    box-shadow: 0 0 80px #ff3a3a;
+}
+
+.box:nth-child(3):hover {
+    background: #3e88ff;
+    color: #3e88ff;
+    box-shadow: 0 0 80px #3e88ff;
+}
+
+.box:nth-child(4):hover {
+    background: #d0fc3f;
+    color: #d0fc3f;
+    box-shadow: 0 0 80px #d0fc3f;
+}
+
+/* Glowing border animation */
+.box::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #09090a;
+}
+
+/* Icon styling */
+.box i {
+    position: relative;
+    z-index: 1;
+}
+
+/* Animation elements */
+.box span {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+/* Glowing border animation for specific menu items */
+.box:nth-child(1) span::before,
+.box:nth-child(3) span::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 0;
+    height: 10px;
+    width: 4px;
+    background: #09090a;
+    transform: translateY(-50%) skewY(325deg);
+    transition: 0.5s;
+}
+
+.box:nth-child(1):hover span::before,
+.box:nth-child(3):hover span::before {
+    height: 25px;
+    top: 70%;
+}
+
+.box:nth-child(1) span::after,
+.box:nth-child(3) span::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    height: 10px;
+    width: 4px;
+    background: #09090a;
+    transform: translateY(-50%) skewY(325deg);
+    transition: 0.5s;
+}
+
+.box:nth-child(1):hover span::after,
+.box:nth-child(3):hover span::after {
+    height: 25px;
+    bottom: 50%;
+}
+
+/* Animation for the small element for specific menu items */
+.box:nth-child(1) small::before,
+.box:nth-child(3) small::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    height: 4px;
+    width: 10px;
+    background: #09090a;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.box:nth-child(1):hover small::before,
+.box:nth-child(3):hover small::before {
+    width: 20px;
+    left: 20%;
+}
+
+.box:nth-child(1) small::after,
+.box:nth-child(3) small::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    height: 4px;
+    width: 10px;
+    background: #09090a;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.box:nth-child(1):hover small::after,
+.box:nth-child(3):hover small::after {
+    width: 20px;
+    left: 80%;
+}
+
+.box:nth-child(2) span::before,
+.box:nth-child(4) span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    height: 4px;
+    width: 10px;
+    background: #09090a;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.box:nth-child(2):hover span::before,
+.box:nth-child(4):hover span::before {
+    width: 20px;
+    left: 80%;
+}
+
+.box:nth-child(2) span::after,
+.box:nth-child(4) span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    height: 4px;
+    width: 10px;
+    background: #09090a;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.box:nth-child(2):hover span::after,
+.box:nth-child(4):hover span::after {
+    width: 20px;
+    left: 20%;
+}
+
+.box:nth-child(2) small::before,
+.box:nth-child(4) small::before {
+    content: '';
+    position: absolute;
+    top: 70%;
+    left: 0;
+    height: 10px;
+    width: 4px;
+    background: #09090a;
+    transform: translateY(-50%) skewY(325deg);
+    transition: 0.5s;
+}
+
+.box:nth-child(2):hover small::before,
+.box:nth-child(4):hover small::before {
+    height: 25px;
+    top: 20%;
+}
+
+.box:nth-child(2) small::after,
+.box:nth-child(4) small::after {
+    content: '';
+    position: absolute;
+    bottom: 70%;
+    right: 0;
+    height: 10px;
+    width: 4px;
+    background: #09090a;
+    transform: translateY(-50%) skewY(325deg);
+    transition: 0.5s;
+}
+
+.box:nth-child(2):hover small::after,
+.box:nth-child(4):hover small::after {
+    height: 25px;
+    bottom: 10%;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 420px;
+        height: 105px;
+    }
+
+    .box {
+        width: 70px;
+        height: 70px;
+        font-size: 1.2em;
+    }
+
+    .box:hover {
+        font-size: 1.4em;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 300px;
+        height: 75px;
+    }
+
+    .box {
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+    }
+
+    .box:hover {
+        font-size: 1.2em;
+    }
+}
+

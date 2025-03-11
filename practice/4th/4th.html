@@ -1,0 +1,142 @@
+....
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A|D</title>
+    <link rel="icon" href="image4.png">
+    <link rel="stylesheet" href="4th.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+  
+</div>
+    <div class="wrapper">
+        <h2>Login</h2>
+        <form action="http://127.0.0.1:5500/1st/1st.html" method="get">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" placeholder="Email Address" class="input-form" required>
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-circle-exclamation"></i>
+                </div>
+                <p class="error error-txt">Email can't be blank</p>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password" class="input-form" required>
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-circle-exclamation"></i>
+                </div>
+                <p class="error error-txt">Password can't be blank</p>
+            </div>
+            <div class="pass-link"><a href="">Forgot Password</a></div>
+            <br>
+            <button class="button">
+                <div class="bg"></div>
+                <div class="wrap">
+                    <div class="outline"></div>
+                    <div class="content">
+                        <span class="char state-1">
+                            <span data-label="L" style="--i: 1">L</span>
+                            <span data-label="O" style="--i: 2">O</span>
+                            <span data-label="G" style="--i: 3">G</span>
+                            <span data-label="" style="--i: 4"></span>
+                            <span data-label="I" style="--i: 5">I</span>
+                            <span data-label="N" style="--i: 6">N</span>
+                            <span data-label="" style="--i: 7"></span>
+                            <span data-label="" style="--i: 8"></span>
+                            <span data-label="" style="--i: 9"></span>
+                        </span>
+        
+                        <div class="icon">
+                            <div></div>
+                        </div>
+        
+                        <span class="char state-2">
+                            <span data-label="J" style="--i: 1">J</span>
+                            <span data-label="o" style="--i: 2">o</span>
+                            <span data-label="i" style="--i: 3">i</span>
+                            <span data-label="n" style="--i: 4">n</span>
+                            <span data-label="N" style="--i: 5">N</span>
+                            <span data-label="o" style="--i: 6">o</span>
+                            <span data-label="w" style="--i: 7">w</span>
+                        </span>
+                    </div>
+                </div>
+            </button>
+        </form>
+        <div class="signup-link">Don't have an account? <a href="">Signup Now</a></div>
+    </div>
+    <script>
+      
+const form = document.querySelector("form"),
+  eField = form.querySelector(".email"),
+  eInput = eField.querySelector("input"),
+  pField = form.querySelector(".password"),
+  pInput = pField.querySelector("input");
+
+form.onsubmit = (e) => {
+  e.preventDefault();
+
+  if (eInput.value === "") {
+    setError(eField, "Email can't be blank");
+  } else {
+    checkEmail();
+  }
+
+  if (pInput.value === "") {
+    setError(pField, "Password can't be blank");
+  }
+
+  setTimeout(() => {
+    eField.classList.remove("shake");
+    pField.classList.remove("shake");
+  }, 500);
+
+  function checkEmail() {
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!eInput.value.match(pattern)) {
+      setError(eField, "Enter a valid email address");
+    } else {
+      removeError(eField);
+    }
+  }
+
+  pInput.onkeyup = () => {
+    if (pInput.value === "") {
+      setError(pField, "Password can't be blank");
+    } else {
+      removeError(pField);
+    }
+  };
+
+  if (
+    !eField.classList.contains("error") &&
+    !pField.classList.contains("error")
+  ) {
+    window.location.href = "#";
+  }
+};
+
+function setError(field, message) {
+  field.classList.add("shake", "error");
+  let errorTxt = field.querySelector(".error-txt");
+  errorTxt.innerText = message;
+}
+
+function removeError(field) {
+  field.classList.remove("shake", "error");
+  let errorTxt = field.querySelector(".error-txt");
+  errorTxt.innerText = "";
+}
+...
+    </script>
+</body>
+
+</html>
+...

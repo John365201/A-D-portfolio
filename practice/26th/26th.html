@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Card with Dropdown Code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="26th.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            justify-content: center;
+    display: flex;
+    align-items: center;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            text-align: center;
+            justify-content: center;
+    display: flex;
+    align-items: center;
+        }
+        .card img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .dropdown-btn {
+            margin-top: 12px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            
+        }
+        .dropdown-content {
+            display: none;
+            margin-top: 12px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            white-space: pre-wrap;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <iframe src="../20th/20th.html" frameborder="0" width="310" height="310"></iframe>
+            <button class="dropdown-btn" onclick="toggleCode('codeContent1')">Show Code</button>
+            <div class="dropdown-content" id="codeContent1">
+                <strong>HTML:</strong>
+                <pre> 
+                    
+                </pre>
+                <strong>CSS:</strong>
+                <pre>
+.card {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+}
+                </pre><button class="Btn" onclick="copyAllCode()">
+                    <svg viewBox="0 0 512 512" class="svgIcon" height="1em"><path d="M288 448H64V224h64V160H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64zm-64-96H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64z"></path></svg>
+                    <p class="text">COPY</p>
+                    <span class="effect"></span>
+                  </button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function toggleCode(id) {
+            const codeContent = document.getElementById(id);
+            if (codeContent.style.display === 'block') {
+                codeContent.style.display = 'none';
+            } else {
+                codeContent.style.display = 'block';
+            }
+        }
+
+        function copyAllCode() {
+            const codeContents = document.querySelectorAll('.dropdown-content');
+            let combinedCode = '';
+            codeContents.forEach(content => {
+                combinedCode += content.innerText + '\n';
+            });
+            navigator.clipboard.writeText(combinedCode).then(() => {
+                alert('All code copied to clipboard!');
+            }).catch(err => {
+                alert('Failed to copy code: ' + err);
+            });
+        }function copyAllCode() {
+    const preTags = document.querySelectorAll('.dropdown-content pre');
+    let combinedCode = '';
+    preTags.forEach(pre => {
+        combinedCode += pre.innerText + '\n';
+    });
+
+    navigator.clipboard.writeText(combinedCode).then(() => {
+        alert('All code copied to clipboard!');
+    }).catch(err => {
+        alert('Failed to copy code: ' + err);
+    });
+}
+
+    </script>
+</body>
+</html>
