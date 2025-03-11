@@ -2,7 +2,7 @@ var audio = document.getElementById("audioPlayer")
   , loader = document.getElementById("preloader");
 function settingtoggle() {
     document.getElementById("setting-container").classList.toggle("settingactivate"),
-    document.getElementById("visualmodetogglebuttoncontainer").classList.toggle("visualmodeshow"),
+    document.getElementById("visualmodetogglebuttoncontainer").classList.toggle("visualmodeshow")   ,
     document.getElementById("soundtogglebuttoncontainer").classList.toggle("soundmodeshow")
 }
 function playpause() {
