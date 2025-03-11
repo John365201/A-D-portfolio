@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A|D</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to left, #000, #353333);
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            /* This stacks header + main vertically */
+            align-items: center;
+            /* Centers horizontally only */
+        }
+
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-1 {
+            border: 2px solid black;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 25px;
+            background: rgb(4, 17, 255);
+
+        }
+
+        .card-1 iframe {
+            border: none;
+            border-radius: 25px;
+            width: 350px;
+            height: 350px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card-1 h3 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #fff;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows cards to move to the next line if necessary */
+            justify-content: center;
+            /* Centers the cards */
+            gap: 15px;
+            /* Adds spacing between cards */
+            margin-top: 200px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            color: #fff;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: black;
+            color: rgb(204, 0, 255);
+            z-index: 1000;
+            text-align: center;
+            height: 100px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 10px;
+            bottom: 5px;
+            right: 10px;
+            position: fixed;
+
+        }
+
+        .button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(20, 20, 20);
+            border: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+            cursor: pointer;
+            transition-duration: 0.3s;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .svgIcon {
+            width: 12px;
+            transition-duration: 0.3s;
+        }
+
+        .svgIcon path {
+            fill: white;
+        }
+
+        .button:hover {
+            width: 140px;
+            border-radius: 50px;
+            transition-duration: 0.3s;
+            background-color: rgb(181, 160, 255);
+            align-items: center;
+        }
+
+        .button:hover .svgIcon {
+            /* width: 20px; */
+            transition-duration: 0.3s;
+            transform: translateY(-200%);
+        }
+
+        .button::before {
+            position: absolute;
+            bottom: -20px;
+            content: "Back to Top";
+            color: white;
+            /* transition-duration: .3s; */
+            font-size: 0px;
+        }
+
+        .button:hover::before {
+            font-size: 13px;
+            opacity: 1;
+            bottom: unset;
+            /* transform: translateY(-30px); */
+            transition-duration: 0.3s;
+        }
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header id="headers">
+        This is list or projects
+    </header>
+
+    <div class="main">
+        <div class="card-1" >
+            <iframe src="../practice/5th/5th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Hexagon background</h3>
+                <h4>№1</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/6th/6th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Images list</h3>
+                <h4>№2</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/7th/7th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Grate card</h3>
+                <h4>№3</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/8th/8th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№4</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/9th/9th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№5</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/10th/10th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№6</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/11th/11th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№7</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/12th/12th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№8</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/13th/13th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№9</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/14th/14th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№10</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/15th/15th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№11</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/16th/16th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№12</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/17th/17th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№13</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/18th/18th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№14</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/19th/19th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№15</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/20th/20th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№16</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/21th/21th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№17</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/22th/22th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№18</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/23th/23th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№19</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="../practice/25th/25th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№20</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="27th/27th.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№21</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="practice copy/1st/1st.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Food card</h3>
+                <h4>№22</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="practice copy/2nd/2nd.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Go back</h3>
+                <h4>№21</h4>
+            </a>
+        </div>
+        <div class="card-1">
+            <iframe src="practice copy/3rd/3rd.html" frameborder="0">
+                Describtion
+            </iframe>
+            <a target="_blank" href="https://t.me/ADeveloper8">
+                <h3>Describtion</h3>
+                <h4>№21</h4>
+            </a>
+        </div>
+
+
+
+
+    </div>
+    <div class="center">
+        <a href="#headers">
+            <button class="button">
+                <svg class="svgIcon" viewBox="0 0 384 512">
+                    <path
+                        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+                    </path>
+                </svg>
+            </button>
+        </a>
+    </div>
+    <br>
+</body>
+
+</html>
