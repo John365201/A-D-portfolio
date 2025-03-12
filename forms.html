@@ -168,6 +168,48 @@
             /* transform: translateY(-30px); */
             transition-duration: 0.3s;
         }
+         /* Media Queries */
+         @media (max-width: 1024px) {
+            .main {
+                margin-top: 100px;
+            }
+            .card-1 iframe {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5rem;
+                padding: 15px;
+            }
+            .main {
+                margin-top: 80px;
+            }
+            .card-1 iframe {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+            .main {
+                margin-top: 60px;
+                padding: 10px;
+            }
+            .card-1 {
+                padding: 5px;
+            }
+            .card-1 iframe {
+                width: 200px;
+                height: 200px;
+            }
+        }
     </style>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
