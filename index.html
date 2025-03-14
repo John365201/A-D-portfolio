@@ -29,6 +29,26 @@
     <link rel="stylesheet" href="style.css" />
     <!-- google fonts-->
 <body class="body">
+    <div id="loader-container" class="loader-container">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle r="32" cy="40" cx="40"></circle>
+            </svg>
+        </div>
+
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect height="64" width="64" y="8" x="8"></rect>
+            </svg>
+        </div>
+    </div>
+
     <audio loop="" id="audioPlayer" style="display: none">
         <source src="Alphaville_-_Forever_Young_Official_Video128k-1.mp3" type="audio/mp3" />
     </audio>
@@ -673,7 +693,12 @@ window.addEventListener("mousemove", mouseMove),
 window.addEventListener("resize", windowResize);
 
     </script>
-    
+<script>
+    // Hide loader after 3 seconds
+    setTimeout(() => {
+        document.getElementById("loader-container").classList.add("hidden");
+    }, 2000);
+</script>
     <script src="main.js"></script>
 </body>
 
