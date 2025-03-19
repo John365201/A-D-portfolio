@@ -2111,3 +2111,27 @@ footer {
 .acceptButton:hover {
     background-color: #9173ff;
 }
+@media (max-width: 992px) {
+
+    .cookieDescription {
+        text-align: center;
+        font-size: 1.4em;
+        font-weight: 600;
+        color: rgb(99, 99, 99);
+    }
+    .cookieHeading{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 768px) {
+
+    .cookieDescription {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: rgb(99, 99, 99);
+    }
+    .cookieHeading{
+        font-size: 1.5rem;
+    }
+}
