@@ -2024,3 +2024,90 @@ footer {
     background-image: url('https://static.vecteezy.com/system/resources/thumbnails/022/979/516/small/heart-rhythm-graph-checking-your-heartbeat-for-diagnosis-png.png');
     background-size: 10%
 }
+.cookie-banner {
+    width: 300px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 13px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+#cookieSvg {
+    width: 50px;
+}
+
+#cookieSvg g path {
+    fill: rgb(97, 81, 81);
+}
+
+.cookieHeading {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: rgb(26, 26, 26);
+}
+
+.cookieDescription {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+}
+
+.cookieDescription a {
+    color: rgb(59, 130, 246);
+    text-decoration: none;
+}
+
+.cookieDescription a:hover {
+    text-decoration: underline;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.acceptButton {
+    width: 80px;
+    height: 30px;
+    background-color: #7b57ff;
+    border: none;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px #977ef3, 0 2px 4px -1px #977ef3;
+    transition: all .3s ease;
+}
+
+.declineButton {
+    width: 80px;
+    height: 30px;
+    background-color: #dadada;
+    color: rgb(46, 46, 46);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px #bebdbd, 0 2px 4px -1px #bebdbd;
+    transition: all .3s ease;
+}
+
+.declineButton:hover {
+    background-color: #ebebeb;
+}
+
+.acceptButton:hover {
+    background-color: #9173ff;
+}
