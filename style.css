@@ -89,17 +89,17 @@ html {
     cursor: default;
     --color-white: #fff;
     --color-black: #000;
-    --color-dark-mode: #11111b;
+    --color-dark-mode: #161631;
     --color-light-mode: #ece7e1;
-    --color-ddd-color: #ddd;
+    --color-ddd-color: #ffffff;
     --color-gray: #c4c4c4;
-    --color-purple: #4c00ff;
-    --color-light-purple: #c100f6;
-    --color-light-blue: #199ae4;
-    --color-navbarBorder-dark: #e2e2e207;
-    --color-shadowDark: rgba(0, 0, 0, 0.137);
-    --static-heading-gradient-blue: #b0f3f1;
-    --static-heading-gradient-pink: #ffcfdf;
+    --color-purple: #00ff2a;
+    --color-light-purple: #1e00ff;
+    --color-light-blue: #0dff00;
+    --color-navbarBorder-dark: #ff000007;
+    --color-shadowDark: rgba(20, 19, 19, 0.137);
+    --static-heading-gradient-blue: #00fff7;
+    --static-heading-gradient-pink: #ff90fd;
     --tech-stack-box-first-color: #1a1a29;
     --tech-stack-box-second-color: rgba(27, 27, 40, 0);
     --tech-stack-box-border-color: #292929
@@ -119,11 +119,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #ae00ff
+    background: #3a0e4f
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #5900ff
+    background-color: #3a1f6b
 }
 
 .cursor-inner {
@@ -135,7 +135,7 @@ html {
 .cursor-outer {
     width: 35px;
     height: 35px;
-    border: 2px solid #fff
+    border: 2px solid #ff0404;
 }
 
 .cursor-inner,
@@ -177,14 +177,14 @@ html {
 }
 
 .light-mode {
-    --color-dark-mode: #ece7e1;
+    --color-dark-mode: #f7e0c4;
     --color-black: #fff;
     --color-white: #000;
     --color-ddd-color: rgb(31, 31, 31);
     --color-navbarBorder-dark: #d1d6eb;
-    --static-heading-gradient-blue: #0f7878;
-    --static-heading-gradient-pink: #f09bb9;
-    --color-shadowDark: #e2ddd7;
+    --static-heading-gradient-blue: #0015ff;
+    --static-heading-gradient-pink: #ff0059;
+    --color-shadowDark: #ffffff;
     --tech-stack-box-first-color: #e7e2db;
     --tech-stack-box-second-color: #ece7e100;
     --tech-stack-box-border-color: #dad5cf
@@ -504,21 +504,21 @@ noscript {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff
+    background-color: #ff0000
 }
 
 .left-eye {
-    box-shadow: -1px -2px 2px rgba(0, 0, 0, .589) inset
+    box-shadow: -1px -2px 2px rgba(255, 0, 0, 0.589) inset
 }
 
 .right-eye {
-    box-shadow: 1px 3px 2px rgba(0, 0, 0, .589) inset
+    box-shadow: 1px 3px 2px rgba(255, 0, 0, 0.589) inset
 }
 
 .pupil {
     width: 3.5px;
     height: 3.5px;
-    background: #241010
+    background: #ff0000
 }
 
 .logo:hover {
@@ -813,7 +813,7 @@ noscript {
 .letsTalkBtn-text {
     width: 100%;
     height: 100%;
-    background-color: rgba(230, 230, 230, .466);
+    background-color: rgba(230, 230, 230, .355);
     border: none;
     border-radius: 7px;
     backdrop-filter: blur(5px);
@@ -840,7 +840,7 @@ noscript {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(150deg, #7abee6, #cc00ff);
+    background-image: linear-gradient(150deg, #71a4c1, #cc00ff);
     z-index: -1;
     left: 6px;
     top: 6px;
@@ -1451,7 +1451,7 @@ footer {
 }
 
 .social-media-container a:hover {
-    box-shadow: 0 0 50px 100px #8000ff inset;
+    box-shadow: 0 0 50px 100px #5c02b7 inset;
     transition-duration: 1s;
     border: none
 }
