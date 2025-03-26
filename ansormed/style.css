@@ -301,3 +301,54 @@ a {
 .footer_navbar_li {
   margin: 10px;
 }
+@media screen and (max-width: 1024px) {
+  .all, .Xizmatlar_li {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    text-align: center;
+    width: auto;
+  }
+  .list_item {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .header_navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_navigation, .list_item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo-name {
+    font-size: 20px;
+  }
+  .Xizmatlar_li {
+    margin: 40px;
+  }
+  .image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .qabul {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .discribtion {
+    font-size: 16px;
+  }
+  .footer_container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
