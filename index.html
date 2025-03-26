@@ -100,7 +100,9 @@
 
 
     <audio loop="" id="audioPlayer" style="display: none">
-        <source src="Sia_-_Unstoppable_CeeNaija.com_.mp3" type="audio/mp3" />
+        <source id="audioSource" src="Sia_-_Unstoppable_CeeNaija.com_.mp3" type="audio/mp3" />
+        <source id="audioSource" src="Lukas_Graham_-_7_Years_@BaseNaija.mp3" type="audio/mp3" />
+        <source id="audioSource" src="Michael_Jackson_-_Billie_Jean.mp3" type="audio/mp3" />
     </audio>
     <div id="preloader"></div>
     <noscript>Allow Javascript</noscript>
@@ -769,7 +771,25 @@
         function playpause() {
             !1 == document.getElementById("switchforsound").checked ? audio.pause() : audio.play()
         }
+        var audio = document.getElementById("audioPlayer"),
+            audioSource = document.getElementById("audioSource"),
+            playlist = ["song1.mp3", "song2.mp3", "song3.mp3"],
+            currentSongIndex = 0;
 
+        function playpause() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+        audio.addEventListener("ended", function() {
+            currentSongIndex = (currentSongIndex + 1) % playlist.length; // Loop back to first song
+            audioSource.src = playlist[currentSongIndex];
+            audio.load();
+            audio.play();
+        });
         function visualmode() {
             document.body.classList.toggle("light-mode"),
                 document.querySelectorAll(".needtobeinvert").forEach(function (e) {
