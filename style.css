@@ -135,7 +135,7 @@ html {
 .cursor-outer {
     width: 35px;
     height: 35px;
-    border: 2px solid #ff0404;
+    border: 2px dashed #ff0404;
 }
 
 .cursor-inner,
@@ -159,7 +159,7 @@ html {
     width: 25px;
     height: 25px;
     transition: .2s;
-    mix-blend-mode: difference
+    mix-blend-mode: difference;
 }
 
 .cursor-outer.hover {
@@ -350,7 +350,7 @@ noscript {
 
 .navbar {
     background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
     height: 80px;
     width: 80%;
     padding: 0 20px;
@@ -436,7 +436,7 @@ noscript {
     border-radius: 20px;
     left: 120px;
     bottom: 80px;
-    opacity: 0
+    opacity: 0;
 }
 
 #hello-friend,
