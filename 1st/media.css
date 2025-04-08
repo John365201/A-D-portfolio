@@ -1,0 +1,141 @@
+@media (max-width: 376px) {
+    header {
+        padding-left: 15px;
+        height: auto;
+        display: flex;
+    }
+
+    .nav-ul {
+        padding-right: 0;
+        margin: 10px 0;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .home-page {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-page-description {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 20px;
+    }
+
+    .home-page-image {
+        position: static;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .home-page-img {
+        width: 205px;
+    }
+
+    .home-page-h1 {
+        font-size: 32px;
+    }
+
+    .home-page-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .work-contanier {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .work-product {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .work-title,
+    .projects-title {
+        margin-left: 15px;
+        text-align: center;
+    }
+
+    .projects {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .project-container-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .project-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        margin-left: 0;
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .form-input,
+    .form button {
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .footer-info {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        justify-content: start;
+    }
+
+    .footer-info-1st,
+    .footer-info-2nd {
+        width: 100%;
+    }
+
+    .footer-info-1st-h1,
+    .footer-info-1st-h3,
+    .footer-info-2nd-h3 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-info-3rd {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-info-3rd .nav-ul {
+        width: 50%;
+
+    }
+
+    .footer-section-title{
+        color: #fff;
+        margin-bottom: 25px;
+        /* text-align: center; */
+    }
+
+    .footer-info-a {
+        margin-top: 20px;
+    }
+    .footer{
+        margin-bottom: 55px;
+    }
+}
