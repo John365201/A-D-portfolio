@@ -1,0 +1,134 @@
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        height: auto;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    .header-nav{
+        width: 50%;
+        display: flex;
+        justify-content: left;
+    }
+    header ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list{
+        /* border: 3px solid; */
+        font-size: 10px;
+    }
+
+    .header-nav-ul {
+        /* border: 3px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 245px;
+    }
+
+    body{
+        background: #fff;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .home-info {
+        margin: 0;
+        align-items: center;
+    }
+
+    .header-img img{
+        width: 80%;
+    }
+
+    .header-img{
+        display: flex;
+        justify-content: end;
+    }
+
+    .home-info-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .home-info-p{
+        width: 100%;
+        height: 250px;
+        text-align: center;
+    }
+
+    .home-info-btns {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .home-info-btn-1st,.home-info-btn-2nd{
+        width: 40%;
+    }
+
+    .section-info-1st {
+        flex-direction: column-reverse;
+        /* margin-top: 155px; */
+    }
+
+    .section-info-1st-main {
+        width: 100%;
+    }
+
+    .section-info-1st-mini-container {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 75px;
+    }
+
+    .section-info-img img{
+        width: 100%;
+    }
+
+    .data-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .data-container-info {
+        width: 100%;
+        height: auto;
+    }
+
+    .data-container-img img{
+        width: 90%;
+    }
+
+    #data-container-last .data-container-info {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .price-p {
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer-1st,
+    .footer-2nd {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+}
